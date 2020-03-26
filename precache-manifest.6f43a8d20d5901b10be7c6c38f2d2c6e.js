@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4713a35d8a09d30b040551e2a538e9f1",
+    "revision": "9b1c72fab8fd2dc5fc896c1577a4cf5a",
     "url": "/reactportfolio/index.html"
   },
   {
-    "revision": "a8123c4842132a6c9c2e",
+    "revision": "95aae3e5283e653cf9d1",
     "url": "/reactportfolio/static/css/main.92ae80a4.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactportfolio/static/js/2.07a19861.chunk.js"
   },
   {
-    "revision": "a8123c4842132a6c9c2e",
-    "url": "/reactportfolio/static/js/main.66d56a27.chunk.js"
+    "revision": "95aae3e5283e653cf9d1",
+    "url": "/reactportfolio/static/js/main.3769b9fe.chunk.js"
   },
   {
     "revision": "545faefdce172d01a44f",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactportfolio/static/media/bgLaptop.99431d6c.png"
   },
   {
-    "revision": "b70bf8f99ee233a1f26d938d07ef96ee",
-    "url": "/reactportfolio/static/media/bgLaptopM.b70bf8f9.png"
+    "revision": "c60724868ffdf9890e3273c74cc77cf2",
+    "url": "/reactportfolio/static/media/bgLaptopM.c6072486.png"
   },
   {
     "revision": "439de75bae8f62cbbf2aa5ff5b7486c8",
