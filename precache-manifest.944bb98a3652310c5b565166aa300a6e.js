@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9b1c72fab8fd2dc5fc896c1577a4cf5a",
+    "revision": "d22b8333d32f9d0ed8e65f5f6dc55d9d",
     "url": "/reactportfolio/index.html"
   },
   {
-    "revision": "95aae3e5283e653cf9d1",
+    "revision": "2212b988eb4342671810",
     "url": "/reactportfolio/static/css/main.92ae80a4.chunk.css"
   },
   {
-    "revision": "f08bee4e3393cada3ce0",
-    "url": "/reactportfolio/static/js/2.07a19861.chunk.js"
+    "revision": "012192ae8e2e400763b7",
+    "url": "/reactportfolio/static/js/2.4bab5dc2.chunk.js"
   },
   {
-    "revision": "95aae3e5283e653cf9d1",
-    "url": "/reactportfolio/static/js/main.3769b9fe.chunk.js"
+    "revision": "2212b988eb4342671810",
+    "url": "/reactportfolio/static/js/main.32ecb4e8.chunk.js"
   },
   {
     "revision": "545faefdce172d01a44f",
@@ -50,6 +50,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c60724868ffdf9890e3273c74cc77cf2",
     "url": "/reactportfolio/static/media/bgLaptopM.c6072486.png"
+  },
+  {
+    "revision": "dba91dc5339e68ad23242b86031471f4",
+    "url": "/reactportfolio/static/media/chevronDown.dba91dc5.png"
+  },
+  {
+    "revision": "1c6080076515f85472e3dda905dc34f7",
+    "url": "/reactportfolio/static/media/chevronUpWht.1c608007.png"
   },
   {
     "revision": "439de75bae8f62cbbf2aa5ff5b7486c8",
