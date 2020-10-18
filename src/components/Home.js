@@ -119,7 +119,7 @@ class Home extends Component {
                         </div>
                     </div>
                     <div style={{ display: 'flex', flex: 1, flexDirection: 'row', }}>
-                        <div style={window.screen.width < 600 ? { flex: 1, display: 'flex', justifyContent: 'flex-end', paddingRight: 25, paddingTop: 25 } : { flex: 1, display: 'flex', backgroundColor: 'yellow', justifyContent: 'center', alignItems: 'center' }}>
+                        <div style={window.screen.width < 600 ? { flex: 1, display: 'flex', justifyContent: 'flex-end', paddingRight: 25, paddingTop: 25 } : { flex: 1, display: 'flex', backgroundColor: 'white', justifyContent: 'center', alignItems: 'center' }}>
                             <img src={me} style={window.screen.width < 600 ? { height: '241.3125px', width: '214.5px' } : { height: '438.75px', width: '390px' }} />
                         </div>
                     </div>
