@@ -95,10 +95,10 @@ class Home extends Component {
                     </Grid> */}
                     <div style={{ display: 'flex', flex: 1, flexDirection: 'row', }}>
                         <div style={window.screen.width < 600 ? { display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'flex-end' } : { display: 'flex', flex: 1, justifyContent: 'center', alignContent: 'center' }}>
-                            <div style={window.screen.width < 600 ? { display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center' } : { display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                            <div style={window.screen.width < 600 ? { display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'flex-end', marginLeft: 25 } : { display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                                 <div style={window.screen.width < 600 ? { display: 'flex', flexDirection: 'column', flex: 0.75, justifyContent: 'space-around'  } : { display: 'flex', flexDirection: 'column', flex: 0.5, justifyContent: 'space-around'  }}>
                                     <div>
-                                        <Typography style={window.screen.width < 600 ? { lineHeight: 0, color: '#1f1f1f', fontSize: '4em', fontFamily: 'TwReg', letterSpacing: 11 } : { color: '#1f1f1f', fontSize: '6.25em', fontFamily: 'TwReg', letterSpacing: 28 }}>
+                                        <Typography style={window.screen.width < 600 ? { lineHeight: 0, color: '#1f1f1f', fontSize: '4em', fontFamily: 'TwReg', letterSpacing: 15 } : { color: '#1f1f1f', fontSize: '6.25em', fontFamily: 'TwReg', letterSpacing: 28 }}>
                                             PAOLO
                                         </Typography>
                                         <Typography style={window.screen.width < 600 ? { color: '#1f1f1f', fontSize: '4em', fontFamily: 'TwBold', letterSpacing: 0.5 } : { lineHeight: 0, color: '#1f1f1f', fontSize: '6.25em', fontFamily: 'TwBold', letterSpacing: 4 }}>

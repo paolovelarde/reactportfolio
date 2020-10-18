@@ -138,7 +138,7 @@ class Projects extends Component {
                                 </div>
                             </div>
                             <div>
-                                <img src={mockup} style={{ height: '165px', width: '165px', }} onClick={() => this.overlayOn(csec)}/>
+                                <img src={mockup} style={{ height: '165px', width: '165px', }} onClick={() => this.overlayOn(mockup)}/>
                             </div>
                         </div>
                         
