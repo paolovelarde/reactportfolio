@@ -65,7 +65,7 @@ class Home extends Component {
         // else{
             stuff =
             <div>
-            <div style={{ backgroundColor: '#ffbf00', height: 15, position: 'absolute', top: 0 }}></div>
+            <div style={{ backgroundColor: '#ffbf00', height: 15, top: 0 }}></div>
                 <div style={window.screen.width < 600 ? { backgroundColor: '#fff', height: '100vh', display: 'flex', flexDirection: 'column',  } : { backgroundColor: '#fff', height: '100vh', display: 'flex', flexDirection: 'row',  }}>
                     {/* <Grid container>
                         <Grid style={{ height: '50vh', display: 'flex', justifyContent: 'center', alignItems: 'center', }} xs={12} sm={6}>
@@ -106,7 +106,7 @@ class Home extends Component {
                                         </Typography>
                                     </div>
                                     <div>
-                                        <Typography style={window.screen.width < 600 ? { color: '#464646', fontFamily: 'TWReg', fontSize: '1em', } : { color: '#464646', fontFamily: 'TWReg', fontSize: '1.25em', }}>Software Engineering Intern at KPMG<br></br>Junior undergrad at University of Toronto<br></br>Executive and Designer at CSEC
+                                        <Typography style={window.screen.width < 600 ? { color: '#464646', fontFamily: 'TWReg', fontSize: '1em', } : { color: '#464646', fontFamily: 'TWReg', fontSize: '1.25em', }}>Software Engineering & UI/UX Design<br></br>Junior undergrad at University of Toronto<br></br>Executive and Designer at CSEC
                                         </Typography>
                                     </div>
                                     <div style={{ display: 'flex', flexDirection: 'row', }}>

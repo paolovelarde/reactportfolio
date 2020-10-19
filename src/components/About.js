@@ -27,88 +27,7 @@ class About extends Component {
         console.log(screen.height)
         var stuff;
         // eslint-disable-next-line no-restricted-globals
-        if(screen.width < 700 && screen.height < 700){
-            stuff = 
-            <div style={{ backgroundColor: '#1f1f1f', height: '100vh', backgroundImage: `url(${bgLaptop})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '100vh', backgroundPosition: 'right', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', }}>
-                <div style={{ width: '90%', height: '100%', display: 'flex', flexDirection: 'column', paddingLeft: '2.5%', justifyContent: 'center'}}>
-                    <Typography style={{ color: '#fff', fontSize: '2.5em', fontFamily: 'TwBold', }}>
-                        About
-                    </Typography>   
-                    <div style={{ height: '80%', width: '90%', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                        <Typography style={{ color: '#ffbf00', fontSize: '1em', fontFamily: 'TwItalic', }}>
-                        Intro
-                        </Typography>
-                        <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg', marginBottom: 20}}>
-                        I'm a rising junior at University of Toronto majoring in Statistics. My expertise is mainly in web/mobile development, as well as UI/UX. I'm currently interning at KPMG and have been doing work in full stack dev using cloud computing services. Feel free to contact!
-                        </Typography>
-                        <Typography style={{ color: '#ffbf00', fontSize: '1em', fontFamily: 'TwItalic',}}>
-                        Exp
-                        </Typography>
-                        <div style={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-between'}}>
-                            <Typography style={{ color: '#cfcfcf', fontSize: '0.85em', fontFamily: 'TwBold',  }}>
-                            Software Engineering Intern at KPMG 
-                            </Typography>
-                            <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg',}}>
-                            Jan - Apr 2020
-                            </Typography>
-                        </div>
-                        <div style={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-between'}}>
-                            <Typography style={{ color: '#cfcfcf', fontSize: '0.85em', fontFamily: 'TwBold',  }}>
-                            Software Engineering Intern at Interac
-                            </Typography>
-                            <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg', }}>
-                            Jan - Apr 2019
-                            </Typography>
-                        </div>
-                        <div style={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-between'}}>
-                            <Typography style={{ color: '#cfcfcf', fontSize: '0.85em', fontFamily: 'TwBold', }}>
-                            Graphic Design Intern at U of T
-                            </Typography>
-                            <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg',  }}>
-                            May - Aug 2018
-                            </Typography>
-                        </div>
-                        <Typography style={{ color: '#ffbf00', fontSize: '1em', fontFamily: 'TwItalic', marginTop: 20 }}>
-                        Tech
-                        </Typography>
-                        <div style={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-                            <div>
-                                <Typography style={{ color: '#cfcfcf', fontSize: '0.85em', fontFamily: 'TwBold', }}>
-                                    Languages
-                                    </Typography>
-                                <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg',  }}>
-                                    JavaScript<br />Python<br />Java<br />HTML<br />CSS
-                                </Typography>
-                            </div>
-                            <div>
-                                <Typography style={{ color: '#cfcfcf', fontSize: '0.85em', fontFamily: 'TwBold', }}>
-                                    Frameworks
-                                    </Typography>
-                                <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg',  }}>
-                                React (Native)<br />Vue.js<br />Node.js<br />pandas<br />Material UI
-                                </Typography>
-                            </div>
-                            <div>
-                                <Typography style={{ color: '#cfcfcf', fontSize: '0.85em', fontFamily: 'TwBold', }}>
-                                    Tools
-                                    </Typography>
-                                <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg',  }}>
-                                Microsoft Azure<br />Google Cloud<br />Git<br />Heroku<br />Adobe CC
-                                </Typography>
-                            </div>
-                            </div>
-                            <Typography style={{ color: '#fff', fontSize: '0.85em', fontFamily: 'TwItalic', marginTop: 20 }}>
-                        Seeking opportunities for next Fall/Winter<a href={resume} target="_blank" style={{ fontFamily:'TwItalic', fontSize:'0.85em', color:'#8c7223', marginLeft: 10}}>(resume)</a>
-                        </Typography>
-                    </div>
-                </div>
-                <div style={{ width: '100%', height: '6vh', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginRight: '10%', paddingBottom: 15 }}>
-                <KeyboardArrowDownIcon onClick={this.scrollWin} style={{ cursor: 'pointer', height: '40px', width: '40px', color: '#fff' }} />
-                </div>
-            </div>
-        }
-        // eslint-disable-next-line no-restricted-globals
-        else if(screen.height > 700 && screen.height < 1000){
+        if(window.screen.height < 1000){
             stuff = 
             <div style={{ backgroundColor: '#1f1f1f', height: '100vh', backgroundImage: `url(${bgLaptop})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '100vh', backgroundPosition: 'right', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', }}>
                 <div style={{ width: '90%', height: '100%', display: 'flex', flexDirection: 'column', paddingLeft: '2.5%', justifyContent: 'center'}}>
@@ -120,7 +39,7 @@ class About extends Component {
                         Intro
                         </Typography>
                         <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg', marginBottom: 10 }}>
-                        I'm a rising junior at University of Toronto majoring in Statistics. My expertise is mainly in web/mobile development, as well as UI/UX. I'm currently interning at KPMG and have been doing work in full stack dev using cloud computing services. Feel free to contact!
+                        I'm a junior at University of Toronto majoring in Statistics, with a focus in Machine Learning and Data Science. My expertise is mainly in web/mobile development, as well as UI/UX. Seeking internship opportunities for 2021!<a href={resume} target="_blank" style={{ fontFamily:'TwItalic', fontSize:'0.85em', color:'#8c7223', marginLeft: 10}}>(resume)</a>
                         </Typography>
                         <Typography style={{ color: '#ffbf00', fontSize: '1.1em', fontFamily: 'TwItalic', marginTop: 20, marginBottom: 5 }}>
                         Exp
@@ -147,6 +66,14 @@ class About extends Component {
                             </Typography>
                             <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg',  }}>
                             May - Aug 2018
+                            </Typography>
+                        </div>
+                        <div style={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-between'}}>
+                            <Typography style={{ color: '#cfcfcf', fontSize: '0.85em', fontFamily: 'TwBold',  }}>
+                            Executive at CS Enrichment Club
+                            </Typography>
+                            <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg',  }}>
+                            Sept 2018 -
                             </Typography>
                         </div>
                         <Typography style={{ color: '#ffbf00', fontSize: '1.1em', fontFamily: 'TwItalic', marginTop: 25, marginBottom: 5 }}>
@@ -178,15 +105,12 @@ class About extends Component {
                                 </Typography>
                             </div>
                             </div>
-                        <Typography style={{ color: '#fff', fontSize: '0.85em', fontFamily: 'TwItalic', marginTop: 25 }}>
-                        Seeking opportunities for next Fall/Winter<a href={resume} target="_blank" style={{ fontFamily:'TwItalic', fontSize:'0.85em', color:'#8c7223', marginLeft: 10}}>(resume)</a>
-                        </Typography>
                         <br />
                     </div>
                 </div>
-                <div style={{ width: '100%', height: '6vh', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginRight: '10%', paddingBottom: 15 }}>
+                {/* <div style={{ width: '100%', height: '6vh', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginRight: '10%', paddingBottom: 15 }}>
                 <KeyboardArrowDownIcon onClick={this.scrollWin} style={{ cursor: 'pointer', height: '40px', width: '40px', color: '#fff' }} />
-                </div>
+                </div> */}
             </div>
         }
         else{
@@ -238,7 +162,7 @@ class About extends Component {
                             Executive at CS Enrichment Club
                             </Typography>
                             <Typography style={{ color: '#9e9e9e', fontSize: '1em', fontFamily: 'TwReg',  }}>
-                            Sept 2018 - now
+                            Sept 2018 -
                             </Typography>
                         </div>
                             <br />

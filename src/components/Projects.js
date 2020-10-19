@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import yellow from '../assets/yellow.png';
+import whiteyellow from '../assets/bgLaptopWhite.png';
 import fi from '../assets/FI.png';
 import csec from '../assets/csec-proj.png';
 import an from '../assets/KP.png';
@@ -8,6 +9,7 @@ import up from '../assets/chevronUpWht.png';
 import { Typography, Grid } from '@material-ui/core';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import ShadowImage from 'react-shadow-image'
 
 // eslint-disable-next-line no-restricted-globals
 var screenHeight = screen.height;
@@ -119,7 +121,7 @@ class Projects extends Component {
                             
                         <div>
                                 <Typography style={{ color: 'rgba(39,39,39,0.7)', fontSize: '1em', fontFamily: 'TwItalic', marginTop: 20 }}>
-                                CS Enrichment Club
+                                Mobile financial emulator
                                 </Typography>
                                 <Typography style={{ color: '#fff', fontSize: '0.85em', fontFamily: 'TwReg',  }}>
                                 Some posters I made for marketing
@@ -159,13 +161,101 @@ class Projects extends Component {
                     <img onClick={() => this.overlayOff()}  src={this.state.img} style={{ height: '800px', width: '800px', cursor: 'pointer'}} />
                 </div>
             </div>
-            <div style={{ backgroundColor: '#ffbf00', height: '100vh', backgroundImage: `url(${yellow})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', paddingLeft: '7.5%', paddingRight: '7.5%' }}>
+            <div style={{ 
+                backgroundColor: '#ffbf00', height: '100vh', backgroundImage: `url(${whiteyellow})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', 
+                height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', paddingLeft: '7.5%', paddingRight: '7.5%' 
+                }}>
                 <div style={{ width: '90%', height: '70%', display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingLeft: '7.5%', }}>
-                    <Typography style={{ color: '#fff', fontSize: '3em', fontFamily: 'TwBold', marginBottom: 25}}>
+                    <Typography style={{ color: '#1f1f1f', fontSize: '3em', fontFamily: 'TwBold', marginBottom: 25}}>
                         Projects
                     </Typography>
-                    <div style={{ width: '90%', height: '70%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <div style={{ height: '90%', width: '30%', }}>
+                    <div style={{ width: '90%', height: '70%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', }}>
+                        <div style={{ display: 'flex', height: '80%', width: '33%', flexDirection: 'column', }}>
+                            <div style={{ display: 'flex', flex: 1, }}>
+                                <img src={mockup} style={{ height: '350px', width: '350px', cursor: 'pointer', }} onClick={() => this.overlayOn(mockup)}/>
+                            </div>
+                            <div style={{ display: 'flex', flex: 1, flexDirection: 'column', marginLeft: 25, marginTop: 15  }}>
+                                <Typography style={{ color: '#1f1f1f', fontSize: '1.5em', fontFamily: 'TwBold', lineHeight: 1.5 }}>
+                                    Mobile fitness app
+                                </Typography>
+                                <Typography style={{ color: '#9e9e9e', fontSize: '1em', fontFamily: 'TwReg' }}>
+                                    Ongoing project. All-in-one fitness tracking app, with an emphasis on user interaction.
+                                </Typography>
+                                <div style={{ marginTop: 10, height: 20, width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                    <div style={{ border: '1px solid #ffbf00', borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 10  }}>
+                                        <Typography style={{ color: '#ffbf00', fontSize: '1em', fontFamily: 'TwBold',  }}>
+                                            React Native
+                                        </Typography>
+                                    </div>
+                                    <div style={{ borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 10, backgroundColor: '#ffbf00'  }}>
+                                        <Typography style={{ color: '#fff', fontSize: '1em', fontFamily: 'TwBold',  }}>
+                                            Node
+                                        </Typography>
+                                    </div>
+                                    <div style={{ border: '1px solid #ffbf00', borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 10  }}>
+                                        <Typography style={{ color: '#ffbf00', fontSize: '1em', fontFamily: 'TwBold',  }}>
+                                            Mongo DB
+                                        </Typography>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style={{ display: 'flex', height: '80%', width: '33%', flexDirection: 'column', }}>
+                            <div style={{ display: 'flex', flex: 1,}}>
+                                <img src={an} style={{ height: '350px', width: '350px', cursor: 'pointer', }} onClick={() => this.overlayOn(an)}/>
+                            </div>
+                            <div style={{ display: 'flex', flex: 1, flexDirection: 'column', marginLeft: 25, marginTop: 15  }}>
+                                <Typography style={{ color: '#1f1f1f', fontSize: '1.5em', fontFamily: 'TwBold', lineHeight: 1.5 }}>
+                                    Voice analysis app
+                                </Typography>
+                                <Typography style={{ color: '#9e9e9e', fontSize: '1em', fontFamily: 'TwReg' }}>
+                                    Conceptualized and brought to life at KPMG.
+                                </Typography>
+                                <div style={{ marginTop: 10, height: 20, width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                    <div style={{ border: '1px solid #ffbf00', borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 10  }}>
+                                        <Typography style={{ color: '#ffbf00', fontSize: '1em', fontFamily: 'TwBold',  }}>
+                                            React
+                                        </Typography>
+                                    </div>
+                                    <div style={{ borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 10, backgroundColor: '#ffbf00'  }}>
+                                        <Typography style={{ color: '#fff', fontSize: '1em', fontFamily: 'TwBold',  }}>
+                                            Node
+                                        </Typography>
+                                    </div>
+                                    <div style={{ border: '1px solid #ffbf00', borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 10  }}>
+                                        <Typography style={{ color: '#ffbf00', fontSize: '1em', fontFamily: 'TwBold',  }}>
+                                            Microsoft Azure
+                                        </Typography>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style={{ display: 'flex', height: '80%', width: '33%', flexDirection: 'column', }}>
+                            <div style={{ display: 'flex', flex: 1, }}>
+                                <img src={fi} style={{ height: '350px', width: '350px', cursor: 'pointer', }} onClick={() => this.overlayOn(fi)}/>
+                            </div>
+                            <div style={{ display: 'flex', flex: 1, flexDirection: 'column', marginLeft: 25, marginTop: 15  }}>
+                                <Typography style={{ color: '#1f1f1f', fontSize: '1.5em', fontFamily: 'TwBold', lineHeight: 1.5 }}>
+                                Mobile financial emulator
+                                </Typography>
+                                <Typography style={{ color: '#9e9e9e', fontSize: '1em', fontFamily: 'TwReg' }}>
+                                Designed and developed as a Proof of Concept at Interac.
+                                </Typography>
+                                <div style={{ marginTop: 10, height: 20, width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                    <div style={{ border: '1px solid #ffbf00', borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 10  }}>
+                                        <Typography style={{ color: '#ffbf00', fontSize: '1em', fontFamily: 'TwBold',  }}>
+                                            React Native
+                                        </Typography>
+                                    </div>
+                                    <div style={{ borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 10, backgroundColor: '#ffbf00'  }}>
+                                        <Typography style={{ color: '#fff', fontSize: '1em', fontFamily: 'TwBold',  }}>
+                                            TypeScript
+                                        </Typography>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div style={{ height: '90%', width: '30%', }}>
                             <Typography style={{ color: 'rgba(59,59,59,0.9)', fontSize: '1.5em', fontFamily: 'TwItalic', paddingLeft: '10%',  }}>
                             Mobile Bank App
                             </Typography>
@@ -246,7 +336,7 @@ class Projects extends Component {
                                 </div>
                             </div>
                         </div>
-                        
+                         */}
                     </div>
                 </div>
                 <div style={{ height: '5vh', display: 'flex', flexDirection: 'row', justifyContent: 'center', }}>
