@@ -48,16 +48,102 @@ class Projects extends Component {
                     <img onClick={() => this.overlayOff()}  src={this.state.img} style={{ height: '375px', width: '375px', cursor: 'pointer'}} />
                 </div>
             </div>
-            <div style={{ backgroundColor: '#ffbf00', height: '100vh', backgroundImage: `url(${yellow})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '100vh', backgroundPosition: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', }}>
+            <div style={{ backgroundColor: '#ffbf00', height: '100vh', backgroundImage: `url(${whiteyellow})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '100vh', backgroundPosition: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', }}>
                 <div style={{ marginTop: -40, width: '90%', height: '100%', display: 'flex', flexDirection: 'column', paddingLeft: '2.5%', justifyContent: 'center'}}>
-                    <Typography style={{ color: '#fff', fontSize: '3em', fontFamily: 'TwBold', }}>
+                    <Typography style={{ color: '#1f1f1f', fontSize: '3em', fontFamily: 'TwBold', }}>
                        Projects
                     </Typography>
-                    <Typography style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.7em', fontFamily: 'TwBold', }}>
+                    <Typography style={{ color: '#9e9e9e', fontSize: '0.7em', fontFamily: 'TwBold', }}>
                         (tap preview to expand)
                     </Typography>
-                    <div style={{ height: '70%', width: '100%',  display:'flex', flexDirection: 'column', justifyContent: 'space-between', marginBottom: -30, marginTop: 15 }}>
-                        <div style={{ height: '30%', width: '100%',  display: 'flex', flexDirection: 'row', justifyContent: 'space-between', }}>
+                    <div style={{ height: '70%', width: '100%',  display:'flex', flexDirection: 'column', justifyContent: 'space-between', marginTop: 15, }}>
+                        <div style={{ display: 'flex', flex: 1, flexDirection: 'row', }}>
+                            <div style={{ display: 'flex', flex: 1, flexDirection: 'column',  }}>
+                                <Typography style={{ color: '#1f1f1f', fontSize: '1.1em', fontFamily: 'TwBold', marginBottom: 5 }}>
+                                Mobile fitness app
+                                </Typography>
+                                <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg', marginBottom: 10 }}>
+                                Ongoing project. All-in-one fitness tracking app, with an emphasis on user interaction.
+                                </Typography>
+                                <div style={{ height: 20, width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                    <div style={{ border: '1px solid #ffbf00', borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 5  }}>
+                                        <Typography style={{ color: '#ffbf00', fontSize: '0.7em', fontFamily: 'TwBold',  }}>
+                                            React
+                                        </Typography>
+                                    </div>
+                                    <div style={{ borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 5, backgroundColor: '#ffbf00'  }}>
+                                        <Typography style={{ color: '#fff', fontSize: '0.7em', fontFamily: 'TwBold',  }}>
+                                            Node
+                                        </Typography>
+                                    </div>
+                                    <div style={{ border: '1px solid #ffbf00', borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 5  }}>
+                                        <Typography style={{ color: '#ffbf00', fontSize: '0.7em', fontFamily: 'TwBold',  }}>
+                                            MongoDB
+                                        </Typography>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', alignContent: 'center' }}>
+                                <img src={mockup} style={{ height: '150px', width: '150px', cursor: 'pointer', }} onClick={() => this.overlayOn(mockup)}/>
+                            </div>
+                        </div>
+                        <div style={{ display: 'flex', flex: 1, flexDirection: 'row', }}>
+                            <div style={{ display: 'flex', flex: 1, flexDirection: 'column',  }}>
+                                <Typography style={{ color: '#1f1f1f', fontSize: '1.1em', fontFamily: 'TwBold', marginBottom: 5 }}>
+                                Voice analysis app
+                                </Typography>
+                                <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg', marginBottom: 10 }}>
+                                Conceptualized and brought to life at KPMG.
+                                </Typography>
+                                <div style={{ height: 20, width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                    <div style={{ border: '1px solid #ffbf00', borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 5  }}>
+                                        <Typography style={{ color: '#ffbf00', fontSize: '0.7em', fontFamily: 'TwBold',  }}>
+                                            React
+                                        </Typography>
+                                    </div>
+                                    <div style={{ borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 5, backgroundColor: '#ffbf00'  }}>
+                                        <Typography style={{ color: '#fff', fontSize: '0.7em', fontFamily: 'TwBold',  }}>
+                                            Azure
+                                        </Typography>
+                                    </div>
+                                    <div style={{ border: '1px solid #ffbf00', borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 5  }}>
+                                        <Typography style={{ color: '#ffbf00', fontSize: '0.7em', fontFamily: 'TwBold',  }}>
+                                            Python
+                                        </Typography>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', alignContent: 'center' }}>
+                                <img src={an} style={{ height: '150px', width: '150px', cursor: 'pointer', }} onClick={() => this.overlayOn(an)}/>
+                            </div>
+                        </div>
+                        <div style={{ display: 'flex', flex: 1, flexDirection: 'row',  }}>
+                            <div style={{ display: 'flex', flex: 1, flexDirection: 'column',  }}>
+                                <Typography style={{ color: '#1f1f1f', fontSize: '1.1em', fontFamily: 'TwBold', marginBottom: 5 }}>
+                                Mobile financial emulator
+                                </Typography>
+                                <Typography style={{ color: '#9e9e9e', fontSize: '0.85em', fontFamily: 'TwReg', marginBottom: 10 }}>
+                                Designed and developed as a Proof of Concept at Interac.
+                                </Typography>
+                                <div style={{ height: 20, width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                                    <div style={{ border: '1px solid #ffbf00', borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 5  }}>
+                                        <Typography style={{ color: '#ffbf00', fontSize: '0.7em', fontFamily: 'TwBold',  }}>
+                                            React Native
+                                        </Typography>
+                                    </div>
+                                    <div style={{ borderRadius: 45, paddingLeft: 10, paddingRight: 10, marginRight: 5, backgroundColor: '#ffbf00'  }}>
+                                        <Typography style={{ color: '#fff', fontSize: '0.7em', fontFamily: 'TwBold',  }}>
+                                            TypeScript
+                                        </Typography>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div style={{ display: 'flex', flex: 1, justifyContent: 'flex-end', alignContent: 'center' }}>
+                                <img src={fi} style={{ height: '150px', width: '150px', cursor: 'pointer', }} onClick={() => this.overlayOn(fi)}/>
+                            </div>
+                        </div>
+                        {/* <div style={{ height: '30%', width: '100%',  display: 'flex', flexDirection: 'row', justifyContent: 'space-between', }}>
                             <div>
                                 <Typography style={{ color: 'rgba(39,39,39,0.7)', fontSize: '1em', fontFamily: 'TwItalic', marginTop: 20 }}>
                                 Mobile Bank App
@@ -143,13 +229,13 @@ class Projects extends Component {
                                 <img src={mockup} style={{ height: '165px', width: '165px', }} onClick={() => this.overlayOn(mockup)}/>
                             </div>
                         </div>
-                        
+                         */}
                     </div>
 
                 </div>
-                <div style={{ width: '100%', height: '6vh', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginRight: '10%', paddingBottom: 15 }}>
+                {/* <div style={{ width: '100%', height: '6vh', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginRight: '10%', paddingBottom: 15 }}>
                 <KeyboardArrowUpIcon onClick={this.scrollWin} style={{ cursor: 'pointer', height: '40px', width: '40px', color: '#fff' }} />
-                </div>
+                </div> */}
             </div>
             </div>
         }
