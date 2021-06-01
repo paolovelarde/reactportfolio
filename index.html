@@ -46,6 +46,15 @@
                     font-size: 27px;
                 }
             }
+            .section_title {
+                padding: 0;
+            }
+            @media (max-width: 440px){
+                .section_title {
+                    display: block;
+                    padding: 16px 0 0 16px;
+                }
+            }
             h3 {
                 font-family: "Karla";
                 font-weight: 700;
@@ -158,9 +167,33 @@
                     flex-direction: column;
                 }
             }
-            .sig-container {
+            .head-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
                 position: absolute;
                 padding-top: 64px;
+                width: 100vw;
+                max-width: 1080px;
+                align-items: center;
+            }
+            @media (max-width: 440px){
+                .head-container {
+                    padding: 32px 16px 0 0;
+                    margin-right: 32px;
+                    width: 90%
+                }
+            }
+            .dark-mode {
+                height: 30px;
+                width: auto;
+                cursor: pointer;
+            }
+            @media (max-width: 440px){
+                .dark-mode {
+                    height: 25px;
+                    width: auto;
+                }
             }
             @media (max-width: 440px){
                 .sig-container {
@@ -169,7 +202,7 @@
                 }
             }
             .sig {
-                width: 80px;
+                width: 60px;
                 height: auto;
                 opacity: 0.75;
             }
@@ -201,7 +234,7 @@
             @media (max-width: 440px){
                 .me-container {
                     flex: 0.3;
-                    margin-bottom: 48px;
+                    margin-bottom: 32px;
                 }
             }
             .me {
@@ -225,6 +258,10 @@
                     flex-direction: row;
                     overflow: auto;
                     padding-left: 16px;
+                }
+                ::-webkit-scrollbar {
+                    width: 0px;
+                    background: transparent; /* make scrollbar transparent */
                 }
             }
             .work-exp-row {
@@ -263,14 +300,61 @@
                 }
             }
         </style>
+        <script>
+            var isLight = true;
+            function changeLightTheme() {
+                var container = document.getElementsByClassName("container");
+                var home = document.getElementsByClassName("home");
+                var h1 = document.getElementsByTagName("h1");
+                var sig = document.getElementsByClassName("sig");
+                var dark_mode = document.getElementsByClassName("dark-mode");
+                var exp = document.getElementsByClassName("exp");
+                var section_title = document.getElementsByClassName("section_title");
+                var me = document.getElementsByClassName("me");
+                var desc = document.getElementsByClassName("desc");
+                var desc_mobile = document.getElementsByClassName("desc-mobile");
+                for(var i=0; i < container.length; i++){
+                    { isLight ? container[i].style.backgroundColor = "#121212" : container[i].style.backgroundColor = "#eeeeee" }
+                }
+                for(var i=0; i < home.length; i++){
+                    { isLight ? home[i].style.backgroundColor = "#0a0a0a" : home[i].style.backgroundColor = "#f8f6f6" }
+                }
+                for(var i=0; i < h1.length; i++){
+                    { isLight ? h1[i].style.color = "#fff" : h1[i].style.color = "#1d1d1f" }
+                }
+                for(var i=0; i < sig.length; i++){
+                    { isLight ? sig[i].src = "signature-mobile-dark.png" : sig[i].src = "signature-mobile.png" }
+                }
+                for(var i=0; i < dark_mode.length; i++){
+                    { isLight ? dark_mode[i].src = "light-button.png" : dark_mode[i].src = "dark-button.png"}
+                }
+                for(var i=0; i < exp.length; i++){
+                    { isLight ? exp[i].style.backgroundColor = "#171717" : exp[i].style.backgroundColor = "#fff" }
+                }
+                for(var i=0; i < section_title.length; i++){
+                    { isLight ? section_title[i].style.color = "#fff" : section_title[i].style.color = "#1d1d1f" }
+                }
+                for(var i=0; i < me.length; i++){
+                    { isLight ? me[i].src = "me-dark.png" : me[i].src = "me.png" }
+                }
+                for(var i=0; i < desc.length; i++){
+                    { isLight ? desc[i].style.color = "#bababa" : desc[i].style.color = "#222222" }
+                }
+                for(var i=0; i < desc_mobile.length; i++){
+                    { isLight ? desc_mobile[i].style.color = "#bababa" : desc_mobile[i].style.color = "#222222" }
+                }
+                isLight = !isLight;
+            }
+        </script>
     </head>
     <body>
         <div class="container">
             <div class="section">
                 <div class="home">
                     <div class="landing">
-                        <div class="sig-container">
+                        <div class="head-container">
                             <img src="signature-mobile.png" class="sig" />
+                            <img src="dark-button.png" class="dark-mode" onclick="changeLightTheme()"/>
                         </div>
                         <div class="title">
                             <h1>Software developer, <br />UI/UX designer.</h1>
@@ -285,7 +369,7 @@
             </div>
             <div class="section">
                 <div class="exp">
-                    <h2 style="padding: 16px 0 0 16px">Experience</h2>
+                    <h2 class="section_title">Experience</h2>
                     <p class="desc-mobile" style="margin-left: 16px;">Currently working at Makeship.</p>
                     <div class="work-exp">
                         <div class="work-exp-row">
