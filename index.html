@@ -29,6 +29,9 @@
                 color: #1d1d1f;
                 line-height: 1.15em;
             }
+            h1dark {
+                color: #fff;
+            }
             @media (max-width: 440px){
                 h1 {
                     font-size: 32px;
@@ -40,6 +43,9 @@
                 font-size: 36px;
                 color: #1d1d1f;
                 line-height: 1.15em;
+            }
+            h2dark {
+                color: #fff;
             }
             @media (max-width: 440px){
                 h2 {
@@ -83,7 +89,7 @@
             }
             .p2 {
                 font-family: "Karla";
-                font-weight: 200;
+                font-weight: 400;
                 font-size: 16px;
                 color: #fff;
             }
@@ -96,6 +102,9 @@
             .desc {
                 display: block;
             }
+            .descdark {
+                color: #bababa;
+            }
             @media (max-width: 440px){
                 .desc {
                     display: none;
@@ -103,6 +112,9 @@
             }
             .desc-mobile {
                 display: none;
+            }
+            .descdark {
+                color: #bababa;
             }
             @media (max-width: 440px){
                 .desc-mobile {
@@ -116,6 +128,9 @@
                 width: 100%;
                 align-items: center;
                 background-color: #eeeeee;
+            }
+            .containerdark {
+                background-color: #121212;
             }
             .section {
                 display: flex;
@@ -132,6 +147,9 @@
                 justify-content: center;
                 background-color: #f8f6f6;
             }
+            .homedark {
+                background-color: #0a0a0a;
+            }
             @media (max-width: 440px) {
                 .home {
                     height: 75vh;
@@ -145,6 +163,9 @@
                 height: 720px;
                 padding: 64px 100px 0 100px;
                 background-color: #fff;
+            }
+            .expdark {
+                background-color: #171717;
             }
             @media (max-width: 440px){
                 .exp {
@@ -313,6 +334,22 @@
                 var me = document.getElementsByClassName("me");
                 var desc = document.getElementsByClassName("desc");
                 var desc_mobile = document.getElementsByClassName("desc-mobile");
+                var makeship = document.getElementById("makeship");
+                var cibc = document.getElementById("cibc");
+                var kpmg = document.getElementById("kpmg");
+                var interac = document.getElementById("interac");
+                var makeship_job = document.getElementById("makeship-job");
+                var cibc_job = document.getElementById("cibc-job");
+                var kpmg_job = document.getElementById("kpmg-job");
+                var interac_job = document.getElementById("interac-job");
+                var makeship_name = document.getElementById("makeship-name");
+                var cibc_name = document.getElementById("cibc-name");
+                var kpmg_name = document.getElementById("kpmg-name");
+                var interac_name = document.getElementById("interac-name");
+                var makeship_team = document.getElementById("makeship-team");
+                var cibc_team = document.getElementById("cibc-team");
+                var kpmg_team = document.getElementById("kpmg-team");
+                var interac_team = document.getElementById("interac-team");
                 for(var i=0; i < container.length; i++){
                     { isLight ? container[i].style.backgroundColor = "#121212" : container[i].style.backgroundColor = "#eeeeee" }
                 }
@@ -343,6 +380,22 @@
                 for(var i=0; i < desc_mobile.length; i++){
                     { isLight ? desc_mobile[i].style.color = "#bababa" : desc_mobile[i].style.color = "#222222" }
                 }
+                { isLight ? makeship.style.backgroundColor = "#5349ed" : makeship.style.backgroundColor = "#efe5fe" }
+                { isLight ? cibc.style.backgroundColor = "#be2541" : cibc.style.backgroundColor = "#f3c5cd" }
+                { isLight ? kpmg.style.backgroundColor = "#005eb8" : kpmg.style.backgroundColor = "#bbd5e2" }
+                { isLight ? interac.style.backgroundColor = "#ffb92b" : interac.style.backgroundColor = "#ffecc5" }
+                { !isLight ? makeship_job.style.color = "#261cc5" : makeship_job.style.color = "#fff" }
+                { !isLight ? cibc_job.style.color = "#9e0723" : cibc_job.style.color = "#fff" }
+                { !isLight ? kpmg_job.style.color = "#004e98" : kpmg_job.style.color = "#fff" }
+                { !isLight ? interac_job.style.color = "#ce8900" : interac_job.style.color = "#fff" }
+                { !isLight ? makeship_name.style.color = "#5349ed" : makeship_name.style.color = "#fff" }
+                { !isLight ? cibc_name.style.color = "#be2541" : cibc_name.style.color = "#fff" }
+                { !isLight ? kpmg_name.style.color = "#005eb8" : kpmg_name.style.color = "#fff" }
+                { !isLight ? interac_name.style.color = "#d49617" : interac_name.style.color = "#fff" }
+                { !isLight ? makeship_team.style.color = "#5349ed" : makeship_team.style.color = "#fff" }
+                { !isLight ? cibc_team.style.color = "#be2541" : cibc_team.style.color = "#fff" }
+                { !isLight ? kpmg_team.style.color = "#005eb8" : kpmg_team.style.color = "#fff" }
+                { !isLight ? interac_team.style.color = "#efa716" : interac_team.style.color = "#fff" }
                 isLight = !isLight;
             }
         </script>
@@ -373,22 +426,22 @@
                     <p class="desc-mobile" style="margin-left: 16px;">Currently working at Makeship.</p>
                     <div class="work-exp">
                         <div class="work-exp-row">
-                            <div class="work-box" style="background-color: #5349ed;">
+                            <div class="work-box" id="makeship" style="background-color: #efe5fe;">
                                 <div>
-                                    <p class="p2">Software Developer Intern</p>
-                                    <h2 style="color: #fff; line-height: 0.5em;">Makeship</h2>
-                                    <h3 style="color: #fff; line-height: 0.5em; opacity: 0.4;">Engineering</h3>
+                                    <p class="p2" id="makeship-job" style="color: #261cc5">Software Developer Intern</p>
+                                    <h2 id="makeship-name" style="color: #5349ed; line-height: 0.5em;">Makeship</h2>
+                                    <h3 id="makeship-team" style="color: #5349ed; line-height: 0.5em; opacity: 0.7;">Engineering</h3>
                                 </div>
                                 <div class="work-details">
                                     <img src="info.png" height="16px" width="16px" />
                                     <p class="p2" style="font-size: 12px; letter-spacing: 1.5px; opacity: 0.75; margin-right: 8px;">details</p>
                                 </div>
                             </div>
-                            <div class="work-box" style="background-color: #be2541;">
+                            <div class="work-box" id="cibc" style="background-color: #f3c5cd;">
                                 <div>
-                                    <p class="p2">Data Science Intern</p>
-                                    <h2 style="color: #fff; line-height: 0.5em;">CIBC</h2>
-                                    <h3 style="color: #fff; line-height: 0.5em; opacity: 0.4;">Data Studio & Innovation</h3>
+                                    <p id="cibc-job" class="p2" style="color: #9e0723">Data Science Intern</p>
+                                    <h2 id="cibc-name" style="color: #be2541; line-height: 0.5em;">CIBC</h2>
+                                    <h3 id="cibc-team" style="color: #be2541; line-height: 0.5em; opacity: 0.6;">Data Studio & Innovation</h3>
                                 </div>
                                 <div class="work-details">
                                     <img src="info.png" height="16px" width="16px" />
@@ -397,22 +450,22 @@
                             </div>
                         </div>
                         <div class="work-exp-row">
-                            <div class="work-box" style="background-color: #005eb8;">
+                            <div class="work-box" id="kpmg" style="background-color: #bbd5e2;">
                                 <div>
-                                    <p class="p2">Software Engineering Intern</p>
-                                    <h2 style="color: #fff; line-height: 0.5em;">KPMG</h2>
-                                    <h3 style="color: #fff; line-height: 0.5em; opacity: 0.4;">Data & Analytics + AI</h3>
+                                    <p id="kpmg-job" class="p2" style="color: #004e98">Software Engineering Intern</p>
+                                    <h2 id="kpmg-name" style="color: #005eb8; line-height: 0.5em;">KPMG</h2>
+                                    <h3 id="kpmg-team" style="color: #005eb8; line-height: 0.5em; opacity: 0.5;">Data & Analytics + AI</h3>
                                 </div>
                                 <div class="work-details">
                                     <img src="info.png" height="16px" width="16px" />
                                     <p class="p2" style="font-size: 12px; letter-spacing: 1.5px; opacity: 0.75; margin-right: 8px;">details</p>
                                 </div>
                             </div>
-                            <div class="work-box" style="background-color: #ffb92b;">
+                            <div class="work-box" id="interac" style="background-color: #ffecc5;">
                                 <div>
-                                    <p class="p2">Software Developer Intern</p>
-                                    <h2 style="color: #fff; line-height: 0.5em;">Interac</h2>
-                                    <h3 style="color: #fff; line-height: 0.5em; opacity: 0.6;">Digital Products & Services</h3>
+                                    <p id="interac-job" class="p2" style="color: #ce8900">Software Developer Intern</p>
+                                    <h2 id="interac-name" style="color: #d49617; line-height: 0.5em;">Interac</h2>
+                                    <h3 id="interac-team" style="color: #efa716; line-height: 0.5em; opacity: 0.8;">Digital Products & Services</h3>
                                 </div>
                                 <div class="work-details">
                                     <img src="info.png" height="16px" width="16px" />
